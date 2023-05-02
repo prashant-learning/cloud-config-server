@@ -1,0 +1,15 @@
+server:
+    port: 9191
+spring:
+    application:
+        name: spring-cloud-config-server-learning
+    spring:
+    cloud:
+        config:
+            server:
+                native:
+                    searchLocations: file:///E:/work/mouli/fresh-clone/configuration
+    config:
+        name: configserver
+    profiles:
+        active: native
